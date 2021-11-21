@@ -112,9 +112,6 @@ header nav a:hover {
     .portfolio-item {
         width: 50%;
     }
-    .black-back {
-        width: auto;
-    }
 }
 @media  screen and (max-width: 768px) {
     .container-row {
@@ -144,7 +141,7 @@ header nav a:hover {
     align-items: center;
 }
 .description-container {
-    padding: 100px;
+    padding: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
