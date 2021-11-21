@@ -112,6 +112,9 @@ header nav a:hover {
     .portfolio-item {
         width: 50%;
     }
+    .black-back {
+        width: auto;
+    }
 }
 @media  screen and (max-width: 768px) {
     .container-row {
