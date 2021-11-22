@@ -3,6 +3,11 @@ $(document).ready(() => {
         e.stopPropagation();
         createPopup(e.currentTarget);
     });
+
+    $('.control-item').on('click', (e) => {
+        e.stopPropagation();
+        slideTestimonials(e.currentTarget);
+    });
 });
 
 function createPopup(item) {
@@ -27,4 +32,16 @@ function createPopup(item) {
             container.remove();
         }, 250);
     });
+}
+function slideTestimonials(item) {
+    const clicked = $(item);
+    if (clicked.hasClass('active')) {
+        return;
+    }
+    const index = $('.control-item').index(clicked);
+    const width = $('.testimonials-card').outerWidth(true);
+    const scroll = width * 2 * index;
+    $('.testimonials-inner').css('transform', 'translateX(-' + scroll + 'px)');
+    $('.control-item').removeClass('active');
+    $('.control-item').eq(index).addClass('active');
 }
