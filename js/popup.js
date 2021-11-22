@@ -17,4 +17,14 @@ function createPopup(item) {
     const img = $('<img>', {'class':'popup', 'src': src});
     container.append(img);
     $('body').append(container);
+    setTimeout(() => {
+        container.addClass('ready');
+    });
+
+    img.on('click', () => {
+        container.removeClass('ready');
+        setTimeout(() => {
+            container.remove();
+        }, 250);
+    });
 }

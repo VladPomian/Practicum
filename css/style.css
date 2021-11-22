@@ -179,6 +179,7 @@ footer nav a:hover {
     height: 250px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .description-container {
     padding: 45px;
@@ -347,12 +348,16 @@ footer ul {
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1500px;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 250ms ease;
+}
+.popup-container.ready {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
 }
 .popup {
     background: white;
