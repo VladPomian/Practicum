@@ -14,19 +14,19 @@
             <nav>
                 <img src="img/fort-icon.png" alt="Логотип сайта">
                 <ul>
-                    <li><a href="#" title="На главную">Главная</a></li>
-                    <li><a href="#" title="Об услугах">Услуги</a></li>
-                    <li><a href="#" title="Фотогалерея">Галерея</a></li>
-                    <li><a href="#" title="Контактные данные">Контакты</a></li>
+                    <li><a href="#top" title="На главную">Главная</a></li>
+                    <li><a href="#services" title="Об услугах">Услуги</a></li>
+                    <li><a href="#portfolio" title="Фотогалерея">Галерея</a></li>
+                    <li><a href="#contact" title="Контактные данные">Контакты</a></li>
                 </ul>
                 <div id="hambuger" class="icon">&#9776;</div>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="top">
                 <img class="top-image" src="img/04.jpg" alt="Обложка страницы">
             </section>
-            <section class="services"> 
+            <section class="services" id="services"> 
                 <h1 class="main-title">Наши возможности</h1>
                 <div class="delimiter"></div>
                 <p class="main-title-description">Lorem, ipsum dolor sit amet</p>
@@ -65,11 +65,11 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2 class="main-title">Наши работы</h2>
                 <div class="delimiter"></div>
                 <p class="main-title-description">Lorem ipsum dolor sit amet</p>
-            </section>
+
             <section class="overlay">
                 <div class="black-back">
                     <h2 class="main-title">Подробности</h2>
@@ -128,7 +128,57 @@
                 </div>
             </div>
         </section>
+            </section>
+        <section class="contact" id="contact">
+            <h2 class="main-title">Контактная форма</h2>
+            <div class="delimiter"></div>
+            <p class="main-title-description">С радостью ответим на любой вопрос</p>
+            <form id="contactform" method="post" action="contact.php" class="contact-form">
+                <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+                <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+                <input name="theme" type="text" class="col" placeholder="Тема сообщения">
+                <input name="phone" type="tel" class="col" placeholder="Номер телефона">
+                <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+                <input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+            </form>
+            <span class="row-col check">
+                <input id="accept" type="checkbox" class="" required>
+                <label for="accept">Я прочитал(а) и принимаю условия
+                    <a href="#">Пользовательского соглашения</a></label>
+            </span>
+        </section>
         </main>
-        <footer>...</footer>
+        <footer>
+            <nav id="myTopnav">
+                <ul class="menu">
+                    <li><a href="#top" class="menu-element" data-link="top" title="На главную">Главная</a></li>
+                    <li><a href="#services" class="menu-element" data-link="services" title="Общая информация">Общее</a></li>
+                    <li><a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a></li>
+                    <li><a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="brand">
+                <img src="img/fort-icon.png" alt="Логотип сайта">
+                <span>AWESOME</span>
+            </div>
+            <div class="social">
+                <a href="#" title="Facebook" target="_blank">
+                    <img class="social-img" src="img/001-facebook.png" alt="Facebook">
+                </a>
+                <a href="#" title="LinkedIn" target="_blank">
+                    <img class="social-img" src="img/004-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" title="Instagram" target="_blank">
+                    <img class="social-img" src="img/005-instagram.png" alt="Instagram">
+                </a>
+                <a href="#" title="Twitter" target="_blank">
+                    <img class="social-img" src="img/007-twitter.png" alt="Twitter">
+                </a>
+                <a href="#" title="Tumblr" target="_blank">
+                    <img class="social-img" src="img/010-tumblr.png" alt="Tumblr">
+                </a>
+            </div>
+            <div class="copyright">© Very First Page 2020</div>
+        </footer>
     </body>
 </html>
