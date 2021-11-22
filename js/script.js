@@ -14,8 +14,10 @@ window.onload = function() {
 const menuList = document.querySelectorAll('.menu-element');
 menuList.forEach(function(element) {
     element.addEventListener('click', function(event) {
-        event.preventDefault();
         const elementLink = element.dataset.link;
-        document.getElementById(elementLink).scrollIntoView({ behavior: 'smooth'});
+        if (elementLink) {
+            event.preventDefault();
+            document.getElementById(elementLink).scrollIntoView({ behavior: 'smooth'});
+        }
     });
 });

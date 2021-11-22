@@ -51,6 +51,10 @@ footer nav a:hover {
     border-bottom: 1px solid #ffffff;
 }
 .top-image { width: 100%;}
+.top-image-sub {
+    height: 200px;
+    object-fit: cover;
+}
 .services {
     text-align: center;
     margin: 50px 0;
@@ -142,6 +146,45 @@ footer nav a:hover {
     .portfolio-item {
         width: 50%;
     }
+    .testimonials {
+        margin: 80px 0;
+    }
+    .testimonials-container {
+        max-width: 760px;
+    }
+    .testimonials-card {
+        width: 350px;
+    }
+
+    /*contacts.html*/
+    .about-container {
+        max-width: 450px;
+    }
+    .about-row {
+        flex-direction: column;
+    }
+    .about-column {
+        width: 100%;
+    }
+    .content-left {
+        margin-bottom: 25px;
+    }
+    .achievement-container {
+        max-width: 450px;
+    }
+    .achievement-row {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .achievement-column {
+        width: 100%;
+    }
+    .single-achiement {
+        margin: 20px 0;
+    }
+    .counter {
+        font-size: 32px;
+    }
 }
 @media  screen and (max-width: 768px) {
     .container-row {
@@ -149,6 +192,12 @@ footer nav a:hover {
     }
     .row-item {
         width: unset;
+    }
+    .testimonials-container {
+        max-width: 550px;
+    }
+    .testimonials-card {
+        width: 250px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -162,6 +211,20 @@ footer nav a:hover {
     }
     .contact-form .submit {
         font-size: 14px;
+    }
+    .testimonials-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .testimonials-inner {
+        transform: translateX(0px) !important;
+        flex-direction: column;
+    }
+    .testimonials-card {
+        width: auto;
+    }
+    .testimonials-controls {
+        display: none;
     }
 }
 .icon {
@@ -418,4 +481,80 @@ footer ul {
 .control-item.active {
     cursor: default;
     background-color: #ce416e;
+}
+
+
+/*contacts.html*/
+.about-us {
+    color: #454546;
+}
+.about-container {
+    max-width: 960px;
+    margin: 80px auto;
+}
+.about-row {
+    display: flex;
+    align-items: center;
+}
+.about-column {
+    width: 50%;
+    padding: 0 15px;
+}
+.about-column img {
+    width: 100%;
+}
+.about-us h2,
+.about-us h3,
+.about-us p {
+    margin-bottom: 15px;
+}
+.about-contact {
+    display: flex;
+}
+.about-contact span {
+    margin-bottom: 7px;
+}
+.about-contact span:first-child {
+    flex: 1;
+}
+.about-contact span:last-child {
+    color: #ce416e;
+    font-weight: 600;
+    flex: 3;
+}
+.our-achievement {
+    background-color: #ce416e;
+}
+.achievement-container {
+    color: white;
+    max-width: 960px;
+    margin: 80px auto;
+}
+.achievement-row {
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+.achievement-column {
+    width: 25%;
+    padding: 0 15px;
+}
+.single-achiement {
+    text-align: center;
+}
+.single-achiement p {
+    font-size: 18px;
+}
+.counter {
+    font-size: 40px;
+    font-weight: 600;
+}
+.countup {
+    display: inline-block;
+}
+.map {
+    margin: 50px 0;
+}
+.map .main-title-description {
+    margin-bottom: 30px;
 }
